@@ -1,0 +1,18 @@
+.title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: $second-color-hover;
+    margin: 0;
+    &_right {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    &_small {
+        margin-top: 48px;
+        font-size: 24px;
+        line-height: 28px
+    }
+}

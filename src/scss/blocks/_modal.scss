@@ -1,0 +1,46 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .5);
+    &__subtitle {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $second-color-hover;
+        text-align: center;
+    }
+    &__close {
+        position: absolute;
+        font-size: 40px;
+        top: -10px;
+        right: 15px;
+        color: $main_color;
+        cursor: pointer;
+        &:hover {
+            color: $main-color-hover;
+        }
+    }
+    &__form {
+        padding: 30px 40px;
+        position: absolute;
+        width: 380px;
+        min-height: 140px;
+        background-color: $second-color;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px 1px 10px black;
+    }
+
+    &__show {
+        display: block;
+    }
+}
+

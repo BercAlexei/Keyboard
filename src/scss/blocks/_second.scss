@@ -1,0 +1,41 @@
+.second {
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__imgs {
+        display: flex;
+        justify-content: space-between;
+        .img1 {
+            width: 255px;
+            margin-right: 30px;
+            img {
+                border-radius:20px;
+                width: 100%;
+                
+            }
+        }
+
+        .img2 {
+            width: 445px;
+            img {
+                border-radius:20px;
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        margin-left: 125px;
+        
+    }
+    &__descr {
+        margin-top: 27px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $complementary-color;
+    }
+}

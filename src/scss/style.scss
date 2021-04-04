@@ -1,0 +1,27 @@
+@import 'base/libs';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/animation';
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buutons';
+@import 'blocks/title';
+@import 'blocks/square';
+@import 'blocks/second';
+@import 'blocks/advantages';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/form';
+
+@import 'base/media';

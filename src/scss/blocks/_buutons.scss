@@ -1,0 +1,36 @@
+.button {
+    width: 175px;
+    height: 58px;
+    padding: 16px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: $second-color;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $second-color-hover;
+    &:hover {
+        background-color: $second-color-hover;
+        color: #fff;
+    }
+    &:focus {
+        outline: none;
+    }
+    &_main {
+        background-color: $main-color;
+        color:#fff;
+        &:hover {
+            background-color: $main-color-hover;
+        }
+    }
+    &_submit {
+        margin-top: 20px;
+        width: 100%;
+        background-color: $main-color;
+        color: #fff;
+        &:hover {
+            background-color: $main-color-hover;
+        }
+    }
+}
