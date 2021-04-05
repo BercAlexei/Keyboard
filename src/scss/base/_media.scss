@@ -206,7 +206,7 @@
         &__imgs {
             position: relative;
             max-width: 100%;
-            // right: 62px;
+            right: 62px;
             justify-content: space-between;
 
             .img1 {
@@ -252,14 +252,5 @@
             }
             
         }
-    }
-}
-
-@media (max-width: 322px) {
-    .second {
-        &__imgs {
-           right: 62px; 
-        }
-        
     }
 }
