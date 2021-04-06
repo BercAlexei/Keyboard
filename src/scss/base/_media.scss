@@ -245,12 +245,13 @@
     .modal {
         &__form{
             max-width: 300px;
-            form {
-                input {
-                max-width: 100%;
-            }
-            }
+            
             
         }
+    }
+    .feed-form {
+        input {
+        max-width: 100%;
+    }
     }
 }
