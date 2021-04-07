@@ -3,14 +3,7 @@
         max-width: 950px;
     }
 
-    .square {
-        &_right {
-            left: 980px;
-        }
-
-    }
-
-    .second {
+    .performance {
         &__imgs {
             .img1 {
                 display: none;
@@ -26,13 +19,14 @@
     .container {
         max-width: 689px;
     }
-    .square {
-        display: none;
-    }
     .promo {
+
         min-height: 465px;
         &__wrapper {
             margin-top: 68px;
+            &:after {
+                display: none;
+            }
         }
         &__descr {
             margin-right: 69px;
@@ -44,7 +38,7 @@
             line-height: 26px;
         }
         &__img {
-            min-width: 478px;
+            min-width: 478px; 
         }
         &__date {
             font-size: 1em;
@@ -53,9 +47,12 @@
         }
     }
 
-    .second {
+    .performance {
         &__wrapper {
             flex-wrap: wrap;
+            &:before {
+                display: none;
+            }
         }
 
         &__imgs {
@@ -76,7 +73,7 @@
                     object-fit: cover;
                     height: 100%;
                 }
-            }
+            } 
         }
 
         &__text {
@@ -121,7 +118,8 @@
             line-height: 26px;
         }
         &__item {
-            max-width: 280px;
+            width: 47%;
+            margin-right: 0;
             &:nth-last-child(-n+2) {
                 margin-top: 72px;
             }
@@ -146,11 +144,11 @@
             justify-content: center;
             margin: 0 auto 0 auto;
             margin-top: 70px;
-            max-width: 100%;
+            width: 100%;
             br {
                 display: none;
             }
-            &:nth-last-child(1){
+            &:nth-child(4){
                 margin: 0 auto;
                 margin-top: 70px;
             }
@@ -202,11 +200,10 @@
         }
     }
 
-    .second {
+    .performance {
         &__imgs {
             position: relative;
             max-width: 100%;
-            right: 62px;
             justify-content: space-between;
 
             .img1 {
@@ -253,5 +250,42 @@
         input {
         max-width: 100%;
     }
+    }
+}
+
+// Добавление стилей для позиционирования картинок
+
+
+@media (max-width: 375px) {
+    .promo {
+        &__img {
+            img {
+                border-radius: 20px 0 0 20px;
+            }
+            
+        }
+    }
+
+    .performance {
+        &__imgs {
+            .img2 {
+                img {
+                    border-radius: 20px 0 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 325px) {
+    .performance {
+        &__imgs {
+            right: 62px;
+            .img2{
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
     }
 }

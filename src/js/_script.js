@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             item.style.display = 'block'
                         }
                     })
-
-                } 
+                    
+                }
 
             }) 
         })

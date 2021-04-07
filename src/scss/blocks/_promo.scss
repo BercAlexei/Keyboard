@@ -3,10 +3,22 @@
     min-height: 500px;
     padding: 55px 0 30px 0;
     &__wrapper {
+        position: relative;
         margin-top: 83px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 255px;
+            height: 240px;
+            background: $second-color;
+            border-radius: 20px;
+            right: -285px;
+            top: 0;
+        }
     }
     &__descr {
         max-width: 445px;
